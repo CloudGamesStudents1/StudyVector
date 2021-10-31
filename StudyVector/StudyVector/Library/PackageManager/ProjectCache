@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637710232538219392
-    m_Hash: 4007186375
+      ticks: 637712536990795215
+    m_Hash: 1857255145
   m_LockFileStatus:
     m_FilePath: C:/GitHub/CloudGamesStudents1/StudyVector/StudyVector/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637710232647017579
+      ticks: 637712538129179861
     m_Hash: 38571225
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

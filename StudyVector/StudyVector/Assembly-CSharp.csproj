@@ -60,12 +60,12 @@
     <Compile Include="Assets\2DVector\stage3\s3_Object.cs" />
     <Compile Include="Assets\2DVector\stage2\s2_Object.cs" />
     <Compile Include="Assets\2DVector\stage1\s1_Object1.cs" />
-    <Compile Include="Assets\2DVector\stage1\s1_Object2.cs" />
-    <Compile Include="Assets\2DVector\stage5\s5_ball.cs" />
     <Compile Include="Assets\2DVector\stage6\s6_ball.cs" />
+    <Compile Include="Assets\2DVector\stage5\s5_ball.cs" />
+    <Compile Include="Assets\2DVector\stage1\s1_Object2.cs" />
+    <Compile Include="Assets\2DVector\stage7\s7_bar.cs" />
     <Compile Include="Assets\2DVector\stage6\s6_bar.cs" />
     <Compile Include="Assets\2DVector\stage7\s7_ball.cs" />
-    <Compile Include="Assets\2DVector\stage7\s7_bar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

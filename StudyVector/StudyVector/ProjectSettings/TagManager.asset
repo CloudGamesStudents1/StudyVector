@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Object
   - Bar
+  - SideBar
+  - TopDownBar
   layers:
   - Default
   - TransparentFX
