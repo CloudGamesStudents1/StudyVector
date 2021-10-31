@@ -21,9 +21,8 @@ public class s2_Object : MonoBehaviour
 
     /*当たり判定用*/
     Vector3 VecDis = new Vector3();
-    Vector3 VecZero = new Vector3();
     float distance;
-    float apoint = 95;
+    float apoint = 64;
     bool HitFlag=true;
 
     // Start is called before the first frame update

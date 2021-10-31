@@ -1,6 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
+
+/*
+ * 複数の物体の当たり判定
+ */
 
 public class s3_Object : MonoBehaviour
 {
@@ -17,11 +24,9 @@ public class s3_Object : MonoBehaviour
 
     /*当たり判定用*/
     GameObject[] gameObjects;
-    Dictionary<GameObject, bool> HitFlags = new Dictionary<GameObject, bool>();
     Vector3 VecDis = new Vector3();
-    Vector3 VecZero = new Vector3();
     float distance;
-    float apoint = 95;
+    float apoint = 64;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +35,6 @@ public class s3_Object : MonoBehaviour
         obj = this.gameObject;
         //Objectタグのゲームオブジェクトをすべて取得
         gameObjects = GameObject.FindGameObjectsWithTag("Object");
-        //
     }
 
     // Update is called once per frame
@@ -68,8 +72,13 @@ public class s3_Object : MonoBehaviour
                 VecDis = obj.transform.position - other.transform.position;
                 //２点間の距離
                 distance = VecDis.magnitude;
+                //
                 if (distance < apoint)
                 {
+                    //オブジェクト同士が埋め込まれて止まってしまわないように
+                    //当たった瞬間に反対方向に強めに動く
+                    obj.transform.position += - UnitVector * 3;
+                    //弾きかえるようにベクトルを反転
                     UnitVector *= -1;
                 }
             }
